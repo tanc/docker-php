@@ -196,6 +196,7 @@ EXPOSE 9000
 
 COPY templates /etc/gotpl/
 COPY docker-entrypoint.sh /
+COPY docker-php-entrypoint /usr/local/bin/
 COPY actions /usr/local/bin/
 COPY php.ini ${PHP_INI_DIR}
 
